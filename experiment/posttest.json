@@ -1,39 +1,102 @@
-{
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+[
+  {
+    "question": "What is the consequence of setting the initial state covariance too high in the Kalman filter?",
+    "answers": {
+      "a": "The filter converges quickly but may be inaccurate",
+      "b": "The filter converges slowly but robustly",
+      "c": "The filter ignores new measurements",
+      "d": "The filter does not converge at all"
     },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+    "correctAnswer": "b"
+  },
+  {
+    "question": "What is the effect of choosing an initial state covariance that is too low?",
+    "answers": {
+      "a": "The filter will ignore all measurements",
+      "b": "The filter will adapt quickly to measurements but might be less robust",
+      "c": "The filter will converge very slowly",
+      "d": "The filter will become unstable"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "How can initial conditions of the Kalman filter be optimized for better prediction performance?",
+    "answers": {
+      "a": "By setting all initial values to zero",
+      "b": "By guessing the initial values",
+      "c": "By using domain knowledge and historical data",
+      "d": "By not initializing them at all"
+    },
+    "correctAnswer": "c"
+  },
+  {
+    "question": "In the Kalman filter simulation, what is the initial state estimate represented by?",
+    "answers": {
+      "a": "A",
+      "b": "x0",
+      "c": "num_steps",
+      "d": "x0_est"
+    },
+    "correctAnswer": "d"
+  },
+  {
+    "question": "In the absence of process noise, how does the Kalman filter primarily account for uncertainties in the state estimates?",
+    "answers": {
+      "a": "Through the state transition matrix",
+      "b": "By adjusting the measurement noise variance",
+      "c": "By updating the error covariance matrix using the Kalman gain",
+      "d": "By modifying the initial state estimate"
+    },
+    "correctAnswer": "c"
+  },
+  {
+    "question": "Can the initial state estimate (x0_est) be changed, and what effect does it have on the Kalman filter simulation?",
+    "answers": {
+      "a": "No, it must always be [0; 0]",
+      "b": "Yes, it can be changed, and it affects the initial convergence and accuracy of the filter",
+      "c": "No, changing it will cause the filter to fail",
+      "d": "Yes, it can be changed, but it has no effect on the simulation"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "What is the main observation about the estimated state (x0_est) compared to the true state (x0) for State 1 over time?",
+    "answers": {
+      "a": "The estimated state diverges significantly from the true state",
+      "b": "The estimated state closely follows the true state",
+      "c": "The estimated state fluctuates widely around the true state",
+      "d": "The estimated state remains constant while the true state changes"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "What can be inferred about the behaviour of State 2 from the simulation results?",
+    "answers": {
+      "a": "State 2 is decreasing over time",
+      "b": "State 2 remains constant after an initial change",
+      "c": "State 2 oscillates significantly",
+      "d": "State 2 shows an exponential growth"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "What is the role of the Kalman gain in the Kalman filter?",
+    "answers": {
+      "a": "It determines the process noise covariance",
+      "b": "It balances the trust between model prediction and measurement",
+      "c": "It initializes the state vector",
+      "d": "It defines the system dynamics"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "What happens if the measurement noise covariance is increased in a Kalman filter?",
+    "answers": {
+      "a": "The filter relies more on measurements",
+      "b": "The filter relies more on the model prediction",
+      "c": "The filter becomes unstable",
+      "d": "The filter ignores the state transition model"
+    },
+    "correctAnswer": "b"
+  }
+]
