@@ -1,0 +1,102 @@
+[
+  {
+    "question": "The Kalman gain is used to:",
+    "answers": {
+      "a": "Predict future states",
+      "b": "Update the measurement noise",
+      "c": "Combine predictions and measurements",
+      "d": "Eliminate process noise"
+    },
+    "correctAnswer": "c"
+  },
+  {
+    "question": "Which of the following represents the process noise covariance matrix in the Kalman filter?",
+    "answers": {
+      "a": "R",
+      "b": "Q",
+      "c": "P",
+      "d": "H"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "In the given model, what is the nature of the process noise v(n)?",
+    "answers": {
+      "a": "Zero-mean",
+      "b": "Unit variance white noise",
+      "c": "Measurement noise",
+      "d": "All the above"
+    },
+    "correctAnswer": "d"
+  },
+  {
+    "question": "What is the role of the Kalman gain in the Kalman filter?",
+    "answers": {
+      "a": "It updates the state transition matrix",
+      "b": "It determines the measurement noise",
+      "c": "It adjusts the predicted state estimate based on the measurement residual",
+      "d": "It computes the measurement matrix"
+    },
+    "correctAnswer": "c"
+  },
+  {
+    "question": "What does the parameter λ represent in the given model?",
+    "answers": {
+      "a": "Measurement noise variance",
+      "b": "State transition scalar",
+      "c": "Kalman gain scalar",
+      "d": "Error covariance scalar"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "The image shown represents:",
+    "answers": {
+      "a": "The state estimate after measurement update",
+      "b": "The state estimate before measurement update",
+      "c": "The initial state estimate",
+      "d": "The measurement noise"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "The image shown represents:",
+    "answers": {
+      "a": "The prediction of the next state",
+      "b": "The correction based on the measurement residual",
+      "c": "The measurement noise",
+      "d": "The Kalman gain"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "What are the two main steps in the Kalman filter algorithm?",
+    "answers": {
+      "a": "Initialization and execution",
+      "b": "Prediction and update",
+      "c": "Training and testing",
+      "d": "Sorting and merging"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Why is the choice of initial state estimate important in the Kalman filter?",
+    "answers": {
+      "a": "It does not affect the filter’s performance",
+      "b": "It determines the convergence rate and accuracy of the estimates",
+      "c": "It only affects the first prediction step",
+      "d": "It ensures the noise is minimized"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "What is the effect of a very large initial error covariance P(0) in the Kalman filter?",
+    "answers": {
+      "a": "The filter trusts measurements less",
+      "b": "The filter trusts its own model prediction more",
+      "c": "The filter gives high trust to the first few measurements",
+      "d": "The filter ignores all future measurements"
+    },
+    "correctAnswer": "c"
+  }
+]
