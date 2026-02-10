@@ -9,17 +9,6 @@ Kalman filter is an algorithm that combines information about the state of a sys
 <figcaption><strong>Fig. 1 Kalman Filter Block Diagram</strong></figcaption><br>
 </center>
 
-### Kalman Filter
-
-The Kalman Filter algorithm is a powerful tool for estimating and predicting system states in the presence of uncertainty and is widely used in target tracking, navigation, and control. The Kalman Filter predicts the future system state based on past estimations.
-
-Kalman filter combines information about the state of a system using predictions based on a physical model and noisy measurements. It is called a filter because it filters out measurement noise. Kalman filter has many applications in robotics, such as localization of coordinates and velocity using noisy sensor measurements.
-
-<center>  
-	<img style="mix-blend-mode: darken;" src="images/kalmanfilter.png" alt="Kalman Filter Block Diagram">
-	<figcaption>Fig. 1 Kalman Filter Block Diagram</figcaption><br>
-</center>
-
 Kalman Filter performs two main operations:
 
 1. Estimating the next state of the system
@@ -143,7 +132,7 @@ The linear dynamical system is described by the following equations:
    - v(n) is scalar zero-mean white measurement noise with unit variance:
 
 <center>
-  <img src="equation3.png" alt="Measurement noise variance equation" style="max-width: 35%;">
+  <img src="images/equation3.png" alt="Measurement noise variance equation" style="max-width: 35%;">
   <figcaption><strong>Equation 3: Measurement noise variance</strong></figcaption>
 </center>
 
@@ -158,14 +147,14 @@ The linear dynamical system is described by the following equations:
 - **Initial state estimate**:
 
 <center>
-  <img src="equation4.png" alt="Initial state estimate" style="max-width: 15%;">
+  <img src="images/equation4.png" alt="Initial state estimate" style="max-width: 15%;">
   <figcaption><strong>Equation 4: Initial state estimate</strong></figcaption>
 </center>
 
 - **Initial error covariance**:
 
 <center>
-  <img src="equation5.png" alt="Initial error covariance" style="max-width: 47%;">
+  <img src="images/equation5.png" alt="Initial error covariance" style="max-width: 47%;">
   <figcaption><strong>Equation 5: Initial error covariance matrix</strong></figcaption>
 </center>
 
@@ -176,14 +165,14 @@ The linear dynamical system is described by the following equations:
 State prediction (from time n−1 to n):
 
 <center>
-  <img src="equation6.png" alt="State prediction equation" style="max-width: 30%;">
+  <img src="images/equation6.png" alt="State prediction equation" style="max-width: 30%;">
   <figcaption><strong>Equation 6: Predicted state</strong></figcaption>
 </center>
 
 Predicted error covariance:
 
 <center>
-  <img src="equation7.png" alt="Predicted covariance equation" style="max-width: 28%;">
+  <img src="images/equation7.png" alt="Predicted covariance equation" style="max-width: 28%;">
   <figcaption><strong>Equation 7: Predicted error covariance</strong></figcaption>
 </center>
 
@@ -192,28 +181,28 @@ Predicted error covariance:
 - **Kalman Gain**:
 
 <center>
-  <img src="equation8.png" alt="Kalman gain equation" style="max-width: 32%;">
+  <img src="images/equation8.png" alt="Kalman gain equation" style="max-width: 32%;">
   <figcaption><strong>Equation 8: Kalman gain computation</strong></figcaption>
 </center>
 
 - **Measurement residual (innovation)**:
 
 <center>
-  <img src="equation9.png" alt="Innovation equation" style="max-width: 38%;">
+  <img src="images/equation9.png" alt="Innovation equation" style="max-width: 38%;">
   <figcaption><strong>Equation 9: Innovation / residual</strong></figcaption>
 </center>
 
 - **Updated state estimate**:
 
 <center>
-  <img src="equation10.png" alt="Updated state estimate equation" style="max-width: 38%;">
+  <img src="images/equation10.png" alt="Updated state estimate equation" style="max-width: 38%;">
   <figcaption><strong>Equation 10: Corrected state estimate</strong></figcaption>
 </center>
 
 - **Updated error covariance**:
 
 <center>
-  <img src="equation11.png" alt="Updated covariance equation" style="max-width: 45%;">
+  <img src="images/equation11.png" alt="Updated covariance equation" style="max-width: 45%;">
   <figcaption><strong>Equation 11: Updated error covariance</strong></figcaption>
 </center>
 
